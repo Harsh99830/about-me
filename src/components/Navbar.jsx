@@ -1,0 +1,37 @@
+import React from 'react';
+import { NavLink } from 'react-router-dom';
+import { Sun, Moon, ChevronDown } from 'lucide-react';
+import { profile, navLinks } from '../data/content';
+
+export default function Navbar({ theme, toggleTheme }) {
+  return (
+    <nav className="navbar flex justify-between items-center py-8 dashed-bottom">
+      <div className="logo" style={{ fontSize: '1.5rem' }}>
+        {profile.shortName}
+      </div>
+      <div className="nav-links flex items-center gap-4 text-muted" style={{ fontSize: '0.95rem' }}>
+        {navLinks.map((link) => (
+          <NavLink
+            key={link.path}
+            to={link.path}
+            end={link.path === '/'}
+            style={({ isActive }) => isActive ? { color: 'var(--accent-color)', borderBottom: '1px solid var(--accent-color)' } : {}}
+          >
+            {link.label}
+          </NavLink>
+        ))}
+        <div className="dropdown flex items-center" style={{ cursor: 'pointer' }}>
+          <span>More</span>
+          <ChevronDown size={16} style={{ marginLeft: '4px' }} />
+        </div>
+        <button 
+          onClick={toggleTheme} 
+          className="theme-toggle" 
+          style={{ marginLeft: '1rem' }}
+        >
+          {theme === 'dark' ? <Sun size={20} color="#fbbf24" /> : <Moon size={20} className="text-muted" />}
+        </button>
+      </div>
+    </nav>
+  );
+}
