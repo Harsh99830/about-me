@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { Sun, Moon, ChevronDown } from 'lucide-react';
+import { Sun, Moon } from 'lucide-react';
 import { profile, navLinks } from '../data/content';
 
 export default function Navbar({ theme, toggleTheme }) {
@@ -20,10 +20,7 @@ export default function Navbar({ theme, toggleTheme }) {
             {link.label}
           </NavLink>
         ))}
-        <div className="dropdown flex items-center" style={{ cursor: 'pointer' }}>
-          <span>More</span>
-          <ChevronDown size={16} style={{ marginLeft: '4px' }} />
-        </div>
+
         <button 
           onClick={toggleTheme} 
           className="theme-toggle" 
