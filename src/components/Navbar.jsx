@@ -5,7 +5,7 @@ import { profile, navLinks } from '../data/content';
 
 export default function Navbar({ theme, toggleTheme }) {
   return (
-    <nav className="navbar flex justify-between items-center py-8 dashed-bottom">
+    <nav className="navbar flex justify-between items-center py-8">
       <div className="logo" style={{ fontSize: '1.5rem' }}>
         {profile.shortName}
       </div>

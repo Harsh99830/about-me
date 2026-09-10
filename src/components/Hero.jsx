@@ -11,7 +11,6 @@ export default function Hero() {
         width: '100%',
         backgroundColor: '#333',
         borderRadius: '16px',
-        marginTop: '2rem',
         border: '3px solid #ffffff',
         backgroundImage: `url("${profile.bannerImage}")`,
         backgroundSize: 'cover',
@@ -43,7 +42,7 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="name-section flex justify-between items-center mt-6" style={{ padding: '0 1rem' }}>
+      <div className="name-section flex justify-between items-center mt-6">
         <h1 className="heading-font" style={{ fontSize: '3rem', margin: 0 }}>
           {profile.name}
         </h1>
