@@ -1,11 +1,12 @@
 import React from 'react';
 import { FileText, ExternalLink } from 'lucide-react';
-import { FaGithub, FaTwitter, FaDiscord } from 'react-icons/fa';
+import { FaGithub, FaTwitter, FaDiscord, FaLinkedin } from 'react-icons/fa';
 import { socialLinks } from '../data/content';
 
 const ICONS = {
   github: FaGithub,
   discord: FaDiscord,
+  linkedin: FaLinkedin,
   twitter: FaTwitter,
   resume: FileText,
 };

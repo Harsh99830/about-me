@@ -25,20 +25,20 @@ export const navLinks = [
 // "highlight" (optional) gets the accent-colored bold treatment, matched by exact text.
 export const aboutItems = [
   {
-    text: 'I am Harsh Agrawal, a passionate developer curious to learn new technologies and build production-ready applications.',
+    text: 'I’m Harsh Agrawal, a developer who enjoys turning ideas into things people can actually use.',
     highlight: 'Harsh Agrawal',
   },
   {
-    text: 'Building modern web applications using React, Next.js, and Vite — creating highly interactive and performant user interfaces.',
-    highlight: 'modern web applications',
+    text: 'Final-year B.Tech CSE (AI & ML) student, constantly exploring new technologies and understanding how they can be used to solve real problems.',
+    highlight: 'Final-year B.Tech CSE (AI & ML) student',
   },
   {
-    text: 'Designing scalable systems — from self-hosted infrastructure and Docker pipelines to serverless functions that optimize compute efficiency.',
-    highlight: null,
+    text: 'I build full-stack applications and AI-powered products, from the first idea and architecture to deployment and everything in between.',
+    highlight: 'full-stack applications and AI-powered products',
   },
   {
-    text: 'Exploring the intersection of Web and AI, integrating LLMs into robust full-stack workflows to solve complex problems.',
-    highlight: null,
+    text: 'My long-term goal is to become a founder and build something truly meaningful, a company that solves a real problem, reaches millions of people, and leaves a lasting impact on the world.',
+    highlight: 'founder',
   },
 ];
 
@@ -58,10 +58,10 @@ export const techStack = [
 // ---- Contact / social links ----
 // icon options: 'github' | 'discord' | 'twitter' | 'resume'
 export const socialLinks = [
-  { name: 'Github', icon: 'github', url: '#' },
-  { name: 'Discord', icon: 'discord', url: '#' },
-  { name: 'Twitter', icon: 'twitter', url: '#' },
-  { name: 'Resume', icon: 'resume', url: '#' },
+  { name: 'Github', icon: 'github', url: 'https://github.com/harsh99830' },
+  { name: 'LinkedIn', icon: 'linkedin', url: 'https://www.linkedin.com/in/harsh-agrawal-a6b260241/' },
+  { name: 'Twitter', icon: 'twitter', url: 'https://x.com/Harsh100710' },
+  { name: 'Resume', icon: 'resume', url: 'https://drive.google.com/file/d/13SHfO-bHM_QiUXmBlnem0TOWU2r8cZfu/view?usp=sharing' },
 ];
 
 // ---- Projects page ----
