@@ -11,7 +11,7 @@ export const profile = {
   bannerImage: '/banner.png',
   avatarImage: '/avatar.png',
   dreamImage: '/dream.png',
-  email: '', // e.g. 'you@example.com' — leave blank to keep the mail button decorative
+  email: 'harshagrawal7878@gmail.com',
 };
 
 // ---- Nav bar links ----
