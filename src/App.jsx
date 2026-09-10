@@ -4,6 +4,7 @@ import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import Projects from './pages/Projects';
 import Blog from './pages/Blog';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   const [theme, setTheme] = useState('dark');
@@ -18,6 +19,7 @@ function App() {
 
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <div className="main-container">
         <Navbar theme={theme} toggleTheme={toggleTheme} />
         <main style={{ flex: 1 }}>
