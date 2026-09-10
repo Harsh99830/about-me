@@ -6,10 +6,11 @@
 export const profile = {
   name: 'Harsh Agrawal',
   shortName: 'Harsh',        // used in navbar logo
-  role: 'Frontend Developer',
-  location: 'Remote, World',
-  bannerImage: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=2000&auto=format&fit=crop',
-  avatarImage: 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=200&auto=format&fit=crop',
+  role: 'Web developer',
+  location: '20, Jaipur, India',
+  bannerImage: '/banner.png',
+  avatarImage: '/avatar.png',
+  dreamImage: '/dream.png',
   email: '', // e.g. 'you@example.com' — leave blank to keep the mail button decorative
 };
 

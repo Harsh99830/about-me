@@ -1,8 +1,17 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Mail } from 'lucide-react';
 import { profile } from '../data/content';
 
 export default function Hero() {
+  const [showDreamImage, setShowDreamImage] = useState(false);
+
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      setShowDreamImage(prev => !prev);
+    }, 5000);
+    return () => clearTimeout(timeout);
+  }, [showDreamImage]);
+
   return (
     <div className="hero dashed-bottom" style={{ paddingBottom: '2.5rem' }}>
       <div className="banner" style={{
@@ -17,22 +26,59 @@ export default function Hero() {
         backgroundPosition: 'center',
         boxShadow: '0 4px 20px var(--shadow-color)'
       }}>
-        <img
-          src={profile.avatarImage}
-          alt="Profile"
+        <div 
+          onClick={() => setShowDreamImage(prev => !prev)}
           style={{
             position: 'absolute',
             left: '1.5rem',
             bottom: '-48px',
             width: '120px',
             height: '120px',
-            borderRadius: '16px',
-            border: '4px solid #ffffff',
-            objectFit: 'cover',
-            backgroundColor: 'var(--bg-color)',
-            boxShadow: '0 4px 12px var(--shadow-color)',
+            perspective: '1000px',
+            cursor: 'pointer',
           }}
-        />
+        >
+          <div style={{
+            width: '100%',
+            height: '100%',
+            position: 'relative',
+            transition: 'transform 0.8s cubic-bezier(0.4, 0.0, 0.2, 1)',
+            transformStyle: 'preserve-3d',
+            transform: showDreamImage ? 'rotateY(180deg)' : 'rotateY(0deg)',
+          }}>
+            <img
+              src={profile.avatarImage}
+              alt="Profile"
+              style={{
+                position: 'absolute',
+                width: '100%',
+                height: '100%',
+                borderRadius: '16px',
+                border: '4px solid #ffffff',
+                objectFit: 'cover',
+                backgroundColor: 'var(--bg-color)',
+                boxShadow: '0 4px 12px var(--shadow-color)',
+                backfaceVisibility: 'hidden',
+              }}
+            />
+            <img
+              src={profile.dreamImage || profile.avatarImage}
+              alt="Dream"
+              style={{
+                position: 'absolute',
+                width: '100%',
+                height: '100%',
+                borderRadius: '16px',
+                border: '4px solid #ffffff',
+                objectFit: 'cover',
+                backgroundColor: 'var(--bg-color)',
+                boxShadow: '0 4px 12px var(--shadow-color)',
+                backfaceVisibility: 'hidden',
+                transform: 'rotateY(180deg)',
+              }}
+            />
+          </div>
+        </div>
       </div>
 
       <div className="profile-section flex items-center" style={{ paddingTop: '0.75rem', paddingLeft: 'calc(120px + 2.5rem)', minHeight: '48px' }}>
@@ -42,8 +88,8 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="name-section flex justify-between items-center mt-6">
-        <h1 className="heading-font" style={{ fontSize: '3rem', margin: 0 }}>
+      <div className="name-section flex justify-between items-center mt-6" style={{ padding: '0 1rem 0 1.5rem' }}>
+        <h1 style={{ fontFamily: 'var(--font-body)', fontWeight: 800, fontSize: '3rem', margin: 0, letterSpacing: '-0.03em' }}>
           {profile.name}
         </h1>
         <a
