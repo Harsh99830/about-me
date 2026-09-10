@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import Projects from './pages/Projects';
-import Work from './pages/Work';
+import Blog from './pages/Blog';
 
 function App() {
   const [theme, setTheme] = useState('dark');
@@ -24,7 +24,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/projects" element={<Projects />} />
-            <Route path="/work" element={<Work />} />
+            <Route path="/blog" element={<Blog />} />
           </Routes>
         </main>
         <footer className="py-8 flex justify-between text-muted items-center" style={{ fontSize: '0.9rem', padding: '2rem 1rem' }}>

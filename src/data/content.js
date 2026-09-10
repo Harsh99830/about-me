@@ -17,7 +17,7 @@ export const profile = {
 export const navLinks = [
   { label: 'Home', path: '/' },
   { label: 'Projects', path: '/projects' },
-  { label: 'Work', path: '/work' },
+  { label: 'Blog', path: '/blog' },
 ];
 
 // ---- About section bullets ----
