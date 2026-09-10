@@ -19,7 +19,7 @@ export default function TechStack() {
         {techStack.map((item, i) => {
           const Icon = ICONS[item.icon] || Code;
           return (
-            <div key={i} className="pill hover:bg-pill-hover-bg transition" style={{ cursor: 'default' }}>
+            <div key={i} className="pill hover:bg-pill-hover-bg transition" style={{ cursor: 'default', flexGrow: 1, justifyContent: 'center' }}>
               <span style={{ color: 'var(--accent-color)', display: 'flex' }}><Icon size={14} /></span>
               <span>{item.name}</span>
             </div>
