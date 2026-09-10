@@ -70,6 +70,22 @@ export const socialLinks = [
 // ---- Projects page ----
 export const projects = [
   {
+    title: 'Clyro',
+    description: 'A location-based platform where people can upload and discover local media from any place around the world. Experience a location through the eyes of the people who live there, before you ever visit.',
+    image: '/clyro.png',
+    tags: ['Web', 'Social', 'Platform'],
+    link: 'https://clyro-swart.vercel.app/',
+    github: '',
+  },
+  {
+    title: 'CoreXgym',
+    description: 'A full-stack platform for managing memberships, plans, users, payments, coupons, and gym branches. Features an admin dashboard with revenue and membership tracking.',
+    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=600&auto=format&fit=crop',
+    tags: ['React', 'Node.js', 'MongoDB', 'Express'],
+    link: '',
+    github: 'https://github.com/Harsh99830/gym_management',
+  },
+  {
     title: 'Fuudr',
     description: 'The ultimate short-form food reel app. Watch video reels of dishes from restaurants near you and order instantly.',
     image: 'https://fuudr.com/banner.png',
