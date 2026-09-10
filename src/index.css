@@ -22,7 +22,7 @@
   --bg-color: #fafafa;
   --text-color: #18181b;
   --text-muted: #6b6b70;
-  --border-color: #e4e4e7;
+  --border-color: rgba(0, 0, 0, 0.15);
   --accent-color: #18181b;
   --accent-strong: #000000;
   --link-hover: #18181b;

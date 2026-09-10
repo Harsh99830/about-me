@@ -50,8 +50,11 @@ export const techStack = [
   { name: 'React', icon: 'layout' },
   { name: 'Tailwind CSS', icon: 'layout' },
   { name: 'Node.js', icon: 'server' },
+  { name: 'FastAPI', icon: 'server' },
   { name: 'Python', icon: 'terminal' },
   { name: 'Postgresql', icon: 'database' },
+  { name: 'Supabase', icon: 'database' },
+  { name: 'Git', icon: 'code' },
   { name: 'Docker', icon: 'cloud' },
 ];
 
@@ -67,20 +70,36 @@ export const socialLinks = [
 // ---- Projects page ----
 export const projects = [
   {
-    title: 'Agentic Workflow Builder',
-    description: 'A visual node-based editor for building and deploying AI agent workflows autonomously. Built with React Flow and LangChain.',
-    image: 'https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?q=80&w=600&auto=format&fit=crop',
-    tags: ['React', 'LangChain', 'Tailwind'],
-    link: '#',
-    github: '#',
+    title: 'Fuudr',
+    description: 'The ultimate short-form food reel app. Watch video reels of dishes from restaurants near you and order instantly.',
+    image: 'https://fuudr.com/banner.png',
+    tags: ['React', 'Next.js', 'Tailwind CSS'],
+    link: 'https://fuudr.com',
+    github: '',
   },
   {
-    title: 'Real-time Analytics Dashboard',
-    description: 'High performance data visualization dashboard handling millions of events via WebSockets. Deployed on custom AWS infrastructure.',
-    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=600&auto=format&fit=crop',
-    tags: ['Next.js', 'PostgreSQL', 'WebSockets'],
-    link: '#',
-    github: '#',
+    title: 'FewPick',
+    description: 'FewPick delivers groceries, snacks, drinks, and essentials to your door in minutes. Order even a small cart.',
+    image: '/fewpick.png',
+    tags: ['E-commerce', 'React', 'Node.js'],
+    link: 'https://fewpick.store',
+    github: '',
+  },
+  {
+    title: 'AutoSlay',
+    description: 'Smart form filler. Autofill applications in one click and save time applying to jobs and forms.',
+    image: 'https://autoslay.vercel.app/banner.png',
+    tags: ['Extension', 'Javascript'],
+    link: 'https://autoslay.online',
+    github: '',
+  },
+  {
+    title: 'STED',
+    description: 'The premium platform for mastering Python, Data Science, and Power BI through industry workflows.',
+    image: '/sted.png',
+    tags: ['Web', 'Development'],
+    link: 'https://sted.co.in',
+    github: '',
   },
 ];
 

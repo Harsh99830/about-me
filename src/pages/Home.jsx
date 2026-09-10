@@ -4,15 +4,17 @@ import About from '../components/About';
 import ContactLinks from '../components/ContactLinks';
 import TechStack from '../components/TechStack';
 import Projects from './Projects';
+import GithubActivity from '../components/GithubActivity';
 
-export default function Home() {
+export default function Home({ theme }) {
   return (
     <div className="home-page">
       <Hero />
       <About />
       <ContactLinks />
       <TechStack />
-      <Projects />
+      <Projects limit={4} />
+      <GithubActivity theme={theme} />
     </div>
   );
 }

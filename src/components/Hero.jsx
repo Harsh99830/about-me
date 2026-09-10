@@ -88,8 +88,15 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="name-section flex justify-between items-center mt-6" style={{ padding: '0 1rem 0 1.5rem' }}>
-        <h1 style={{ fontFamily: 'var(--font-body)', fontWeight: 800, fontSize: '3rem', margin: 0, letterSpacing: '-0.03em' }}>
+      <div className="name-section flex justify-between items-center mt-6" style={{ padding: '0 1rem 0 1.5rem', flexWrap: 'wrap', gap: '1rem' }}>
+        <h1 style={{ 
+          fontFamily: 'var(--font-body)', 
+          fontWeight: 800, 
+          fontSize: 'clamp(2rem, 8vw, 3rem)', 
+          margin: 0, 
+          letterSpacing: '-0.03em',
+          lineHeight: 1.1
+        }}>
           {profile.name}
         </h1>
         <a
